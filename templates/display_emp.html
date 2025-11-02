@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+</head>
+<body>
+    <center>
+         <h1>EMPLOYEEE TABLE</h1>
+       <table border="2px">
+        <tr>
+            <th>Emp Number</th>
+            <th>Emp Name</th>
+            <th>Salary</th>
+            <th>Job</th>
+            <th>Hire Date</th>
+        </tr>
+        {% for TO in QLEO %}
+        <tr>
+            <td>{{ TO.empno }}</td>
+            <td>{{ TO.ename }}</td>
+            <td>{{ TO.sal }}</td>
+            <td>{{ TO.job }}</td>
+            <td>{{ TO.hiredate }}</td>
+        </tr>
+        {% endfor %}
+       </table>
+    </center>
+</body>
+</html>

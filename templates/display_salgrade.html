@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salgrade</title>
+</head>
+<body>
+    <center>
+         <h1>SALGRADE  TABLE</h1>
+       <table border="2px">
+        <tr>
+            <th>grade</th>
+            <th>low sal</th>
+            <th>high sal</th>
+        
+        </tr>
+        {% for TO in QLSO %}
+        <tr>
+            <td>{{ TO.grade }}</td>
+            <td>{{ TO.low_sal }}</td>
+            <td>{{ TO.high_sal }}</td>
+        </tr>
+        {% endfor %}
+       </table>
+    </center>
+</body>
+</html>
